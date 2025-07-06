@@ -31,7 +31,7 @@ const test_1 = require("@playwright/test");
     const ssn = page.locator("//input[@id='customer.ssn']");
     yield ssn.fill("1234");
     const uname = page.locator("//input[@name='customer.username']");
-    yield uname.fill("testdemo190");
+    yield uname.fill("testdemo@962");
     const pword = page.locator("//input[@name='customer.password']");
     yield pword.fill("pass@123");
     const cpass = page.locator("//input[@name='repeatedPassword']");
@@ -45,7 +45,7 @@ const test_1 = require("@playwright/test");
 (0, test_1.test)("Login feature Test", (_a) => __awaiter(void 0, [_a], void 0, function* ({ page }) {
     yield page.goto("https://parabank.parasoft.com/parabank/index.htm");
     const uname = page.locator("//input[@name='username']");
-    yield uname.fill("testdemo123");
+    yield uname.fill("testdemo@962");
     const pword = page.locator("//input[@name='password']");
     yield pword.fill("pass@123");
     const login = page.locator("(//input[@class='button'])[1]");
